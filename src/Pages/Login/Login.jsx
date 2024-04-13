@@ -8,6 +8,7 @@ import { AuthContext } from "../../Provider/AuthProvider"
 import { useMutation } from "@tanstack/react-query"
 import axios from "axios"
 import Swal from "sweetalert2"
+import shape1 from "../../assets/im.png"
 
 
 
@@ -92,20 +93,15 @@ const Login = () => {
 
 
     return (
-        <div className="w-[100vw] py-[5vh] lg:h-[100vh]">
+        <div className="w-[100vw] py-[5vh] lg:h-[100vh] lg:login">
 
-            <div className="max-w-screen-2xl lg:h-[90vh] mx-auto flex flex-col lg:flex-row justify-around items-center">
-
-                {/* image  */}
+            <div className="max-w-screen-2xl lg:h-[90vh] mx-auto flex flex-col md:flex-row justify-around items-center">
                 <div>
-                    <img src={logininimage} alt="" />
+                    <img className="loginimg w-[22rem] md:w-[20rem] lg:w-auto" src={shape1} alt="" />
 
                 </div>
-
-
-                {/* form  */}
-                <div className="md:w-[28rem]">
-                    <h1 className="text-black text-center text-[2.5rem] font-semibold">Login</h1>
+                <div className="md:w-[28rem] bg-white shadow-xl rounded-3xl p-8">
+                    <h1 className="text-black text-center text-[2rem] font-semibold">Login into account</h1>
 
                     <form onSubmit={handleSubmit(onSubmit)}>
 
@@ -120,15 +116,15 @@ const Login = () => {
                         {errors.password?.type === 'minLength' && <span>Password must be 6 character</span>}
 
 
-                        <input className="w-full mt-5 h-[3.5rem] btn btn-neutral border-none bg-[#8d4dbf] text-white text-xl font-bold" type="submit" id="" value="Sign In" />
+                        <input className="w-full mt-5 h-[3.5rem] btn btn-neutral border-none bg-[#575DFB] text-white text-xl font-bold rounded-xl" type="submit" id="" value="Sign In" />
 
-                        <p className="text-[#8d4dbf] mt-5 text-center text-xl font-medium">Do not have an account? <Link to='/signup'><span className="font-bold">Sign Up</span></Link></p>
+                        <p className="text-[#575DFB] mt-5 text-center text-xl font-medium">Do not have an account? <Link to='/signup'><span className="font-bold underline">Sign Up</span></Link></p>
 
                         <p className="text-[#444] mt-5 text-xl font-medium text-center">Or sign in with</p>
 
                         <div className="flex items-center justify-center gap-14 mt-5">
 
-                            <div onClick={handleGoogleSignIn} className="w-[3.25rem] hover:bg-white cursor-pointer btn-neutral h-[3.25rem] bg-[#F1F2F4] border-2 flex justify-center items-center border-[#8d4dbf] rounded-[50%] ">
+                            <div onClick={handleGoogleSignIn} className="w-[8.25rem] hover:bg-white cursor-pointer btn-neutral h-[3.5rem] border-2 flex justify-center items-center border-gray-200 rounded-md">
                                 <img src={google} alt="" />
                             </div>
 
