@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import bannerImage from "../../../assets/banner.png"
+import bannerImage from "../../../assets/banner.jpg"
 import { useContext } from "react";
 import { AuthContext } from "../../../Provider/AuthProvider";
 
@@ -8,14 +8,14 @@ const Banner = () => {
     return (
         <div className="flex flex-col-reverse lg:flex-row lg:h-[80vh] justify-between items-center px-[10%] mt-6 lg:mt-0">
 
-            <div data-aos="flip-left"  data-aos-duration="1500">
-                <h1 className="playfont  text-[2rem] md:text-[2.5rem] lg:text-[4rem] lg:leading-[4.5rem] lg:w-[40rem]">Effortless Task Management, Elevated Productivity</h1>
-                <p className="mt-6 text-xl lg:w-[45rem]">Welcome to Task Management, where organizing your tasks becomes a seamless experience. Unlock the power of collaborative task management with intuitive features, real-time updates, and a user-friendly interface.</p>
+            <div>
+                <h1 className="mont text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] lg:leading-[4.5rem] lg:w-[50rem]">Effortless Task Management, Elevated Productivity</h1>
+                <p className="mt-6 text-xl lg:w-[45rem]">Organize and manage your team like a boss with Bitrix24, a free task management tool packing more capabilities than you can imagine.</p>
 
-                <Link to={user? '/dashboard/dashboardhome' : '/login'}><button className="capitalize w-[18rem] h-14 btn-secondary bg-[#8d4dbf] border-none rounded-lg text-white mt-8 text-xl">Lets Explore</button></Link>
+                <Link to={user? '/dashboard/dashboardhome' : '/login'}><button className="capitalize w-[18rem] h-14  bg-[#fd7a38c9] border-none rounded-lg text-white font-medium mt-8 text-2xl">Get Started</button></Link>
             </div>
 
-            <img data-aos="flip-right"  data-aos-duration="1500" className="w-[100vw] lg:w-[33rem] lg:h-[33rem] rounded-[33rem]" src={bannerImage} alt="" />
+            <img data-aos="flip-right"  data-aos-duration="1500" className="w-[100vw] lg:w-[43rem] lg:h-[43rem]" src={bannerImage} alt="" />
             
         </div>
     );

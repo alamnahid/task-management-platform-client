@@ -51,8 +51,8 @@ const Navbar = () => {
 
                         :
                         <div>
-                            <Link to="/login"><button className="btn btn-outline border-[] lg:w-[6rem] text-lg border-2">Signin</button></Link>
-                            <Link to="/signup"><button className="btn border-none bg-[#8d4dbf] lg:w-[6rem] text-lg text-white ml-4 btn-neutral">Register</button></Link>
+                            <Link to="/login"><button className="btn btn-outline border-[#fd7a38c9] lg:w-[6rem] text-lg border-2">Signin</button></Link>
+                            <Link to="/signup"><button className="btn border-none bg-[#fd7a38c9] lg:w-[6rem] text-lg text-white ml-4 btn-neutral">Register</button></Link>
                         </div>
 
                     }
