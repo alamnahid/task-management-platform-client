@@ -1,29 +1,37 @@
-import task from "../../../assets/task.png"
-
+import task from "../../../assets/img_why.webp"
+import taskcreate from "../../../assets/Effortless Task Creation.webp"
+import taskstatusupdate from "../../../assets/task-status-updates.webp"
+import taskprioroty from "../../../assets/prioroty.webp"
+import tasklsecurity from "../../../assets/securitry.webp"
 const FeatureSection = () => {
     return (
-        <div className="flex flex-col-reverse lg:flex-row justify-between items-center lg:mx-[10%] my-20">
-            <section data-aos="flip-left"  data-aos-duration="1500" className="mt-8">
-                <h2 className="text-3xl font-semibold text-[#444] mb-4">Who Can Benefit?</h2>
-                <p className="text-gray-700 text-lg font-medium">
-                    Our task management platform is designed to cater to a diverse range of professionals,
-                    making it an invaluable tool for:
-                </p>
-                <ul className=" mt-2 ml-6">
-                    <li>✔️ Developers looking to streamline project tasks</li>
-                    <li>✔️ Corporate professionals managing team projects</li>
-                    <li>✔️ Bankers organizing financial tasks and deadlines</li>
-                </ul>
-                <p className="text-gray-700 mt-4">
-                    Regardless of your industry or role, Task Management Platform is here to enhance your task
-                    management experience and boost productivity.
-                </p>
-            </section>
-
-            <img data-aos="flip-right"  data-aos-duration="1500" className="w-[30%]" src={task} alt="" />
-
+        <div className="flex flex-col lg:flex-row items-center lg:mx-[10%] my-20 gap-32">
+            <img className="w-[40%]" src={task} alt="" />
+            <div className="grid grid-cols-2 justify-items-center gap-6">
+                <div className="text-center p-8 border border-[#fd7a386f] rounded-2xl">
+                    <img className="w-24 h-24 mx-auto" src={taskcreate} alt="" />
+                    <h3 className="mont text-2xl mt-3 font-medium">Effortless Task Creation</h3>
+                    <p className="mt-2 text-xs">Quickly create tasks with titles, descriptions, due dates, and priorities.</p>
+                </div>
+                <div className="text-center p-8 border border-[#fd7a386f] rounded-2xl">
+                    <img className="w-24 h-24 mx-auto" src={taskstatusupdate} alt="" />
+                    <h3 className="mont text-2xl mt-3 font-medium">Task Status Updates</h3>
+                    <p className="mt-2 text-xs">Swipe tasks as Ongoing, Complete, for easy progress tracking.</p>
+                </div>
+                <div className="text-center p-8 border border-[#fd7a386f] rounded-2xl">
+                    <img className="w-24 h-24 mx-auto" src={taskprioroty} alt="" />
+                    <h3 className="mont text-2xl mt-3 font-medium">Priority Management</h3>
+                    <p className="mt-2 text-xs">Prioritize tasks based on urgency and importance for optimal time management.</p>
+                </div>
+                <div className="text-center p-8 border border-[#fd7a386f] rounded-2xl">
+                    <img className="w-24 h-24 mx-auto" src={tasklsecurity} alt="" />
+                    <h3 className="mont text-2xl mt-3 font-medium">Data Security and Privacy</h3>
+                    <p className="mt-2 text-xs">Your data is securely encrypted and protected with advanced security measures.</p>
+                </div>
+            </div>
         </div>
     );
 };
 
 export default FeatureSection;
+//data-aos="flip-right"  data-aos-duration="1500"

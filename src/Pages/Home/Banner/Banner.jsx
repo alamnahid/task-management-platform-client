@@ -10,9 +10,9 @@ const Banner = () => {
 
             <div>
                 <h1 className="mont text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] lg:leading-[4.5rem] lg:w-[50rem]">Effortless Task Management, Elevated Productivity</h1>
-                <p className="mt-6 text-xl lg:w-[45rem]">Organize and manage your team like a boss with Bitrix24, a free task management tool packing more capabilities than you can imagine.</p>
+                <p className="mont mt-6 text-xl lg:w-[45rem]">Organize and manage your team like a boss with Bitrix24, a free task management tool packing more capabilities than you can imagine.</p>
 
-                <Link to={user? '/dashboard/dashboardhome' : '/login'}><button className="capitalize w-[18rem] h-14  bg-[#fd7a38c9] border-none rounded-lg text-white font-medium mt-8 text-2xl">Get Started</button></Link>
+                <Link to={user? '/dashboard/dashboardhome' : '/login'}><button className="capitalize w-[18rem] h-14  bg-[#fd7a38c9] border-none rounded-lg text-white font-medium mt-8 text-2xl mont">Get Started</button></Link>
             </div>
 
             <img data-aos="flip-right"  data-aos-duration="1500" className="w-[100vw] lg:w-[43rem] lg:h-[43rem]" src={bannerImage} alt="" />
