@@ -5,9 +5,9 @@ import taskprioroty from "../../../assets/prioroty.webp"
 import tasklsecurity from "../../../assets/securitry.webp"
 const FeatureSection = () => {
     return (
-        <div className="flex flex-col lg:flex-row items-center lg:mx-[10%] my-20 gap-32">
-            <img className="w-[40%]" src={task} alt="" />
-            <div className="grid grid-cols-2 justify-items-center gap-6">
+        <div className="flex flex-col xl:flex-row items-center mx-[3%] lg:mx-[10%] my-20 gap-8 xl:gap-32">
+            <img className="xl:w-[40%]" src={task} alt="" />
+            <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-6">
                 <div className="text-center p-8 border border-[#fd7a386f] rounded-2xl">
                     <img className="w-24 h-24 mx-auto" src={taskcreate} alt="" />
                     <h3 className="mont text-2xl mt-3 font-medium">Effortless Task Creation</h3>
