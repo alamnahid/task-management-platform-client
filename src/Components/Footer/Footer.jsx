@@ -1,32 +1,39 @@
 
-
+import { Link } from "react-router-dom";
+import logo from "../../assets/logo/logo1.png"
 const Footer = () => {
     return (
         <div>
-            <footer className="footer text-white p-10 bg-gradient-to-r from-violet-500 to-fuchsia-500 px-[10%]">
+            <footer className="footer p-10 bg-[#F7F7F4] px-[10%] py-[5%]">
                 <nav>
-                   <h1 className="font-bold text-3xl">Task Management</h1>
+                    <div className="flex items-center gap-2">
+                        <img src={logo} alt="" />
+                        <h1 className="text-2xl hidden lg:block font-bold">Task<span className="text-[#FD7B38]"> Manager</span></h1>
+                    </div>
                 </nav>
                 <nav>
-                    <header className="footer-title text-white">Product</header>
-                    <a className="link link-hover">Confluence</a>
-                    <a className="link link-hover">Trello</a>
-                    <a className="link link-hover">Jira</a>
-                    <a className="link link-hover">Jira Software</a>
+                    <header className="footer-title">Quick Links</header>
+                    <Link to='/' className="link link-hover">Home</Link>
+                    <Link to='/' className="link link-hover">Dashboard</Link>
+                    <Link to='/' className="link link-hover">Tasks</Link>
+                    <Link to='/' className="link link-hover">Settings</Link>
+                   
                 </nav>
                 <nav>
-                    <header className="footer-title text-white">Services</header>
+                    <header className="footer-title">Services</header>
                     <a className="link link-hover">Branding</a>
                     <a className="link link-hover">Design</a>
                     <a className="link link-hover">Marketing</a>
                     <a className="link link-hover">Advertisement</a>
                 </nav>
                 <nav>
-                    <header className="footer-title text-white">Company</header>
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Contact</a>
-                    <a className="link link-hover">Jobs</a>
-                    <a className="link link-hover">Press kit</a>
+                    <header className="footer-title">Contact Us</header>
+                    <p>Have questions or need assistance? Were here to help!</p>
+                    <ul>
+                        <li>Email: support@taskmanager.com</li>
+                        <li className="mt-1">Phone: +8801796281914</li>
+                        <li className="mt-1">Address: Dhaka, Bangladesh</li>
+                    </ul>
                 </nav>
                 <nav>
                     <header className="footer-title text-white">Social</header>
