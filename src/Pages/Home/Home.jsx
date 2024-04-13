@@ -5,6 +5,7 @@ import FeatureSection from "./FeatureSection/FeatureSection";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import HowItWorks from "./HowItWorks/HowItWorks";
+import Testimonials from "./Testimonials/Testimonials";
 
 const Home = () => {
     useEffect(()=>{
@@ -15,6 +16,7 @@ const Home = () => {
             <Banner/>
             <FeatureSection/>
             <HowItWorks/>
+            <Testimonials/>
             
         </div>
     );
