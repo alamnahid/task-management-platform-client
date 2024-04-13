@@ -1,4 +1,4 @@
-import task from "../../../assets/img_why.webp"
+import task from "../../../assets/bg-banner.png"
 import taskcreate from "../../../assets/Effortless Task Creation.webp"
 import taskstatusupdate from "../../../assets/task-status-updates.webp"
 import taskprioroty from "../../../assets/prioroty.webp"
@@ -34,4 +34,3 @@ const FeatureSection = () => {
 };
 
 export default FeatureSection;
-//data-aos="flip-right"  data-aos-duration="1500"
