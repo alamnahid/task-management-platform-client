@@ -23,17 +23,17 @@ const Section = ({
     }));
 
     let text = "Todo";
-    let bg = `${isOver ? "bg-gray-300" : "bg-gray-500"}`;
+    let bg = `${isOver ? "bg-[#5AC3DD]" : "bg-[#5AC3DD]"}`;
     let tasksToMap = todos;
 
     if (status === "inprogress") {
         text = "Ongoing";
-        bg = `${isOver ? "bg-[#8d4dbf]" : "bg-[#8d4dbf]"}`;
+        bg = `${isOver ? "bg-[#F3B44E]" : "bg-[#F3B44E]"}`;
         tasksToMap = inProgress;
     }
     if (status === "closed") {
         text = "Complete";
-        bg = `${isOver ? "bg-green-800" : "bg-green-500"}`;
+        bg = `${isOver ? "bg-[#68B266]" : "bg-[#68B266]"}`;
         tasksToMap = closed;
     }
 
@@ -43,12 +43,8 @@ const Section = ({
         axiosPublic
             .patch(`/alltasks/${id}`, { status })
             .then((response) => {
-                // Handle success if needed
-                // console.log(response.data);
             })
             .catch((error) => {
-                // Handle error if needed
-                // console.error(error);
             })
             .finally(() => {
                 todoDataRefetch();

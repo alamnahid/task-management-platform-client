@@ -42,35 +42,35 @@ const Task = ({ task, todoDataRefetch }) => {
             <div
                 ref={drag}
                 tabIndex={0}
-                className='text-black border-2 p-2 rounded-lg shadow-md hover:shadow-2xl cursor-pointer'
+                className='text-black border-2 p-2 rounded-lg shadow-md hover:shadow-2xl cursor-pointer bg-white relative w-[23rem]'
             >
-                <div className="font-bold text-lg">{task?.tasktitle} </div>
+                <div className="font-medium mont text-lg text-gray-600"><h2 className="w-[18rem] h-fit">{task?.tasktitle} </h2></div>
                 <div className="">
-                    <span className="font-semibold text-red-700">Deadline : {task?.deadline}</span>
-                    <p className="text-sm mt-3">
+                    <span className="font-semibold text-[#DA4F49] text-xs">Deadline : {task?.deadline}</span>
+                    <p className="text-sm mt-3 text-[#787486]">
                     {task?.description}
                     </p>
                 </div>
                 <div className="flex flex-wrap items-center gap-4 w-full mt-4">
                     
                 <button
-                    className="btn btn-sm btn-neutral bg-[#8d4dbf] text-white border-none"
+                    className="btn btn-sm btn-neutral bg-[#8d4dbf] text-white border-none "
                 >{task?.prioroty}</button>
                 <button
                     type="submit"
                     onClick={() => handleRemoveTask(task._id)}
-                    className="btn btn-sm btn-neutral bg-[#8d4dbf] text-white border-none"
+                    className=" text-red-800 text-[1.38rem] border-none absolute top-2 right-2"
                 >
-                    <MdDeleteForever/> Delete
+                    <MdDeleteForever/>
                 </button>
 
                 <Link to={`/dashboard/updatetask/${task?._id}`}>
                     <button
                         type="submit"
-                        className="btn btn-sm btn-neutral bg-[#8d4dbf] text-white border-none"
+                        className=" text-gray-700 text-xl border-none absolute top-2 right-10"
                         data-tip="Edit"
                     >
-                        <FaEdit/> Edit
+                        <FaEdit/>
                     </button>
                 </Link>
                 </div>

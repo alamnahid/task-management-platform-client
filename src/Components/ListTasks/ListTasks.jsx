@@ -8,7 +8,6 @@ const ListTasks = ({ tasks, setTasks, todoDataRefetch }) => {
     const [closed, setClosed] = useState([]);
 
     useEffect(() => {
-        // Ensure tasks is an array before filtering
         if (Array.isArray(tasks)) {
             const fTodos = tasks.filter((task) => task.status === "todo");
             const fInProgress = tasks.filter((task) => task.status === "inprogress");
