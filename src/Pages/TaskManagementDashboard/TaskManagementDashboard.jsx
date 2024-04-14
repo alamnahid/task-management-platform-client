@@ -15,7 +15,7 @@ const TaskManagementDashboard = () => {
     }, []);
     // console.log(user)
     return (
-        <div className="mt-0 pt-0 bg-[#F9F9F9]">
+        <div className="mt-0 pt-0 bg-[#F9F9F9] mont">
            
             <div className="drawer lg:drawer-open">
                 <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />

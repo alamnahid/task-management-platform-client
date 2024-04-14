@@ -2,10 +2,10 @@
 
 const Accordian = () => {
     return (
-        <div className="flex flex-col justify-evenly lg:flex-row-reverse gap-20 items-center mx-[10%] my-20">
+        <div className="flex flex-col justify-evenly lg:flex-row-reverse gap-8 lg:gap-20 items-center mx-[3%] lg:mx-[10%] my-20 mont">
             <div>
-                <h1 className=" font-medium text-gray-600 text-[2rem] md:text-[2.5rem] lg:text-[3rem] lg:leading-[4.5rem] lg:w-[40rem]">The fastest way to get tasks out of your head.</h1>
-                <p className="mt-6 text-lg text-gray-500 lg:w-[45rem]">Type just about anything into the task field and Todoists one-of-its-kind natural language recognition will instantly fill your to-do list.</p>
+                <h1 className=" font-medium text-gray-600 text-2xl md:text-[2.5rem] lg:text-[3rem] lg:leading-[4rem]">The fastest way to get tasks out of your head.</h1>
+                <p className="mt-6 text-lg text-gray-500">Type just about anything into the task field and Todoists one-of-its-kind natural language recognition will instantly fill your to-do list.</p>
             </div>
 
             <div className="w-full">

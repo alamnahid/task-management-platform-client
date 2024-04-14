@@ -20,23 +20,23 @@ const Navbar = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </div>
                         <ul tabIndex={0} className={`menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ${open ? '' : 'hidden'}`}>
-                            <li><NavLink className={({ isActive }) => isActive ? 'btn text-base border-none bg-[#FFF4EE] text-gray-700' : 'text-base font-medium btn bg-white border-none shadow-none text-gray-700'} to='/'>Home</NavLink></li>
-                            <li><NavLink className={({ isActive }) => isActive ? 'btn text-base border-none bg-[#FFF4EE] text-gray-700' : 'text-base font-medium btn bg-white border-none shadow-none text-gray-700'} to='/about'>About</NavLink></li>
-                            <li><NavLink className={({ isActive }) => isActive ? 'btn text-base border-none bg-[#FFF4EE] text-gray-700' : 'text-base font-medium btn bg-white border-none shadow-none text-gray-700'} to='/dashboard/dashboardhome'>Dashboard</NavLink></li>
+                            <li><NavLink className={({ isActive }) => isActive ? 'btn mont text-base border-none bg-[#FFF4EE] text-gray-700' : 'text-base font-medium btn bg-white border-none shadow-none text-gray-700'} to='/'>Home</NavLink></li>
+                            <li><NavLink className={({ isActive }) => isActive ? 'btn mont text-base border-none bg-[#FFF4EE] text-gray-700' : 'text-base font-medium btn bg-white border-none shadow-none text-gray-700'} to='/about'>About</NavLink></li>
+                            <li><NavLink className={({ isActive }) => isActive ? 'btn mont text-base border-none bg-[#FFF4EE] text-gray-700' : 'text-base font-medium btn bg-white border-none shadow-none text-gray-700'} to='/dashboard/dashboardhome'>Dashboard</NavLink></li>
                         </ul>
                     </div>
                     <Link to='/'>
                         <div className="flex items-center gap-2">
                             <img src={logo} alt="" />
-                            <h1 className="text-2xl hidden lg:block font-bold">Task<span className="text-[#FD7B38]"> Manager</span></h1>
+                            <h1 className="text-2xl mont hidden lg:block font-bold">Task<span className="text-[#FD7B38]"> Manager</span></h1>
 
                         </div></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className=" menu-horizontal px-1">
-                        <li><NavLink className={({ isActive }) => isActive ? 'btn text-base border-none bg-[#FFF4EE] text-gray-700' : 'text-base font-medium btn bg-white border-none shadow-none text-gray-700'} to='/'>Home</NavLink></li>
-                        <li><NavLink className={({ isActive }) => isActive ? 'btn text-base border-none bg-[#FFF4EE] text-gray-700' : 'text-base font-medium btn bg-white border-none shadow-none text-gray-700'} to='/about'>About Us</NavLink></li>
-                        <li><NavLink className={({ isActive }) => isActive ? 'btn text-base border-none bg-[#FFF4EE] text-gray-700' : 'text-base font-medium btn bg-white border-none shadow-none text-gray-700'} to='/dashboard/dashboardhome'>Dashboard</NavLink></li>
+                        <li><NavLink className={({ isActive }) => isActive ? 'btn mont text-base border-none bg-[#FFF4EE] text-gray-700' : 'text-base font-medium btn bg-white border-none shadow-none text-gray-700'} to='/'>Home</NavLink></li>
+                        <li><NavLink className={({ isActive }) => isActive ? 'btn mont text-base border-none bg-[#FFF4EE] text-gray-700' : 'text-base font-medium btn bg-white border-none shadow-none text-gray-700'} to='/about'>About Us</NavLink></li>
+                        <li><NavLink className={({ isActive }) => isActive ? 'btn mont text-base border-none bg-[#FFF4EE] text-gray-700' : 'text-base font-medium btn bg-white border-none shadow-none text-gray-700'} to='/dashboard/dashboardhome'>Dashboard</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
@@ -48,8 +48,8 @@ const Navbar = () => {
 
                             :
                             <div>
-                                <Link to="/login"><button className="btn btn-outline border-[#fd7a38c9] lg:w-[6rem] text-lg border-2">Login</button></Link>
-                                <Link to="/signup"><button className="btn border-none bg-[#fd7a38c9] lg:w-[6rem] text-lg text-white ml-4 btn-neutral">Register</button></Link>
+                                <Link to="/login"><button className="btn mont btn-outline border-[#fd7a38c9] lg:w-[6rem] text-lg border-2">Login</button></Link>
+                                <Link to="/signup"><button className="btn mont border-none bg-[#fd7a38c9] lg:w-[6rem] text-lg text-white ml-4 btn-neutral">Register</button></Link>
                             </div>
 
                     }

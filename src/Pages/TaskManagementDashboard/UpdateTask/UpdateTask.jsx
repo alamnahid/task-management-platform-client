@@ -52,7 +52,7 @@ const UpdateTask = () => {
     }
 
     return (
-        <div className=" mt-20 mb-20">
+        <div className=" mt-20 mb-20 mont">
             <div className="w-[90vw] lg:w-[70vw] mx-auto">
                 <h1 className="text-black text-center text-[2.5rem] font-semibold">Update Task</h1>
 

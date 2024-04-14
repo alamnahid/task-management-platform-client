@@ -5,7 +5,7 @@ import Story from "./Story/Story";
 
 const About = () => {
     return (
-        <div className="min-h-screen pt-20">
+        <div className="min-h-screen pt-8 lg:pt-20">
             <Story/>
             <AboutTestimonials/>
             <Accordian/>
