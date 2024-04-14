@@ -1,9 +1,13 @@
 import Accordian from "../Home/Accordian/Accordian";
+import AboutTestimonials from "./AboutTestimonial/AboutTestimonials";
+import Story from "./Story/Story";
 
 
 const About = () => {
     return (
         <div className="min-h-screen pt-20">
+            <Story/>
+            <AboutTestimonials/>
             <Accordian/>
             
         </div>

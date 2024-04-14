@@ -4,13 +4,14 @@ import Swal from "sweetalert2";
 import { useContext, useEffect } from "react";
 import { AuthContext } from "../../../Provider/AuthProvider";
 import { useMutation } from "@tanstack/react-query";
+import { useNavigate } from "react-router-dom";
 
 const CreateNewTask = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
     const { user } = useContext(AuthContext);
-    console.log(user)
+    const navigate = useNavigate();
     const {
         register,
         handleSubmit,
@@ -32,7 +33,7 @@ const CreateNewTask = () => {
                 confirmButtonText: "OK"
             }).then((result) => {
                 if (result.isConfirmed) {
-                    // navigate('/')
+                    navigate('/dashboard/dashboardhome')
                     reset();
                 }
             });
@@ -68,7 +69,6 @@ const CreateNewTask = () => {
 
                     <input className="w-full mt-2 h-[3.5rem] text-gray-700 placeholder:text-[#A1A1A1] text-lg outline-none pl-[1.81rem] rounded-lg border-2 border-[#D0D0D0] bg-white" type="text" name="tasktitle" id="" placeholder="Enter Task Title" {...register("tasktitle", { required: true })} />
                     {errors.tasktitle && <span>This field is required</span>}
-                    {/* Description input  */}
 
                     <p className="text-[#444] mt-5 text-xl font-semibold">Description</p>
 
@@ -77,7 +77,7 @@ const CreateNewTask = () => {
 
                     <p className="text-[#444] mt-5 text-xl font-semibold">Task Deadline</p>
 
-                    <input className="w-full mt-2 h-[3.5rem] text-gray-700 placeholder:text-[#A1A1A1] text-lg outline-none pl-[1.81rem] rounded-lg border-2 border-[#D0D0D0] bg-white" type="date" name="deadline" id="" placeholder="Enter Task Deadline" {...register("deadline", { required: true })} />
+                    <input className="w-full mt-2 h-[3.5rem] text-gray-700 placeholder:text-[#A1A1A1] text-lg outline-none pl-[1.81rem] pr-4 rounded-lg border-2 border-[#D0D0D0] bg-white" type="date" name="deadline" id="" placeholder="Enter Task Deadline" {...register("deadline", { required: true })} />
                     {errors.deadline && <span>This field is required</span>}
 
 
@@ -91,14 +91,7 @@ const CreateNewTask = () => {
 
                     </select>
 
-
-
-
-
-
-
-
-                    <input className="w-full mt-5 h-[3.5rem] btn btn-neutral border-none bg-[#8d4dbf] text-white text-xl font-bold" type="submit" id="" value="Create Task" />
+                    <input className="w-full mt-5 h-[3.5rem] btn btn-neutral border-none bg-[#fd7a38c9] text-white text-xl font-bold" type="submit" id="" value="Create Task" />
 
                 </form>
             </div>

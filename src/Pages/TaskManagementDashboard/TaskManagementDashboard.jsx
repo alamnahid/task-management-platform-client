@@ -2,6 +2,7 @@ import { NavLink, Outlet } from "react-router-dom";
 import { useContext, useEffect } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { FiLogOut } from "react-icons/fi";
+import moment from "moment";
 
 
 const TaskManagementDashboard = () => {
@@ -37,6 +38,7 @@ const TaskManagementDashboard = () => {
                             <h1 className="text-xl text-gray-800 font-bold">{user?.displayName}</h1>
 
                             <h1 className="text-xs text-gray-600 font-bold">{user?.email}</h1>
+                            <p>{moment().format("MMM Do YYYY")}</p>
 
 
 

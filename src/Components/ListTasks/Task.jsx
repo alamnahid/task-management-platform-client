@@ -54,7 +54,7 @@ const Task = ({ task, todoDataRefetch }) => {
                 <div className="flex flex-wrap items-center gap-4 w-full mt-4">
                     
                 <button
-                    className="btn btn-sm btn-neutral bg-[#8d4dbf] text-white border-none "
+                    className={`px-10 py-1 rounded-lg ${task?.prioroty==='Low' && 'bg-[#F1F2F4] text-[#65676D]'} ${task?.prioroty==='High' && 'bg-[#FF6C65]'} ${task?.prioroty==='Moderate' && 'bg-[#FFA500]'} text-white border-none `}
                 >{task?.prioroty}</button>
                 <button
                     type="submit"
