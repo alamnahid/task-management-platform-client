@@ -42,16 +42,12 @@ const Navbar = () => {
 
                     {
                         user ? <div className="flex gap-4 items-center">
-                            {user.photoURL ? <img className="w-10 rounded-full" alt="Tailwind CSS Navbar component" src={user?.photoURL} />
-                            :
-                            <img className="w-10 rounded-full" alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />}
-
                             <Link to="/"><button onClick={handlelogOut} className="btn btn-outline border-[#FD7B38] w-full text-base text-gray-700">Logout</button></Link>
                         </div>
 
                         :
                         <div>
-                            <Link to="/login"><button className="btn btn-outline border-[#fd7a38c9] lg:w-[6rem] text-lg border-2">Signin</button></Link>
+                            <Link to="/login"><button className="btn btn-outline border-[#fd7a38c9] lg:w-[6rem] text-lg border-2">Login</button></Link>
                             <Link to="/signup"><button className="btn border-none bg-[#fd7a38c9] lg:w-[6rem] text-lg text-white ml-4 btn-neutral">Register</button></Link>
                         </div>
 

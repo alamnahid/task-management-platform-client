@@ -1,4 +1,3 @@
-import logininimage from "../../assets/signup.gif"
 import google from "../../assets/icon/google.svg"
 import { useContext, useEffect } from "react"
 import { Link, useLocation, useNavigate } from "react-router-dom"
@@ -97,7 +96,7 @@ const Login = () => {
 
             <div className="max-w-screen-2xl lg:h-[90vh] mx-auto flex flex-col md:flex-row justify-around items-center">
                 <div>
-                    <img className="loginimg w-[22rem] md:w-[20rem] lg:w-auto" src={shape1} alt="" />
+                    <img className="loginimg mx-auto w-[15rem] md:w-[20rem] lg:w-auto" src={shape1} alt="" />
 
                 </div>
                 <div className="md:w-[28rem] bg-white shadow-xl rounded-3xl p-8">
