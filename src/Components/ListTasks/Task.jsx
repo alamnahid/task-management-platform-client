@@ -6,10 +6,7 @@ import { FaEdit } from "react-icons/fa";
 import { MdDeleteForever } from "react-icons/md";
 import Swal from "sweetalert2";
 
-
-
 const Task = ({ task, todoDataRefetch }) => {
-
 
     const [{ isDragging }, drag] = useDrag(() => ({
         type: "task",
@@ -20,7 +17,6 @@ const Task = ({ task, todoDataRefetch }) => {
     }));
 
     const axiosPublic = useAxiosPublic();
-
     const handleRemoveTask = (id) => {
         axiosPublic.delete(`/alltasks/${id}`)
             .then((res) => {

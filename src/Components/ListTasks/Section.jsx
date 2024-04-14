@@ -2,6 +2,7 @@ import { useDrop } from "react-dnd";
 import useAxiosPublic from "../../Hooks/useAxiosPublic";
 import Header from "./Header";
 import Task from "./Task";
+import EmptyTask from "../EmptyTask/EmptyTask";
 
 
 const Section = ({
@@ -53,16 +54,24 @@ const Section = ({
     return (
         <div ref={drop} className="w-full mt-5">
             <Header text={text} bg={bg} count={tasksToMap.length} />
-            <div className="space-y-1">
-                {tasksToMap?.map((task) => (
-                    <Task
-                        key={task.id}
-                        task={task}
-                        tasks={tasks}
-                        setTasks={setTasks}
-                        todoDataRefetch={todoDataRefetch}
-                    />
-                ))}
+            <div>
+                {
+                    tasksToMap?.length > 0 ? <div className="space-y-1">
+                    {tasksToMap?.map((task) => (
+                        <Task
+                            key={task.id}
+                            task={task}
+                            tasks={tasks}
+                            setTasks={setTasks}
+                            todoDataRefetch={todoDataRefetch}
+                        />
+                    ))}
+                </div>
+                :
+                <div>
+                    <EmptyTask/>
+                </div>
+                }
             </div>
         </div>
     );
