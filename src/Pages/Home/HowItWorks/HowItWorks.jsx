@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import img1 from "../../../assets/bg-banner.png"
 import itsfreeimg from "../../../assets/itsfree.png"
 import createtaskimg from "../../../assets/task_1.png"
 import managetaskimg from "../../../assets/task_2.png"

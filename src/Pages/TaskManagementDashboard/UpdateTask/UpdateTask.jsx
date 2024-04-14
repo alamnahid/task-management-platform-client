@@ -1,10 +1,7 @@
-import { useForm } from "react-hook-form";
 import axios from "axios";
 import Swal from "sweetalert2";
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../../Provider/AuthProvider";
-import { useMutation, useQuery } from "@tanstack/react-query";
-import useAxiosPublic from "../../../Hooks/useAxiosPublic";
 import { useNavigate, useParams } from "react-router-dom";
 
 const UpdateTask = () => {
@@ -18,7 +15,7 @@ const UpdateTask = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/alltasks/todo/${id}`)
+        fetch(`https://task-management-platform-server-psi.vercel.app/alltasks/todo/${id}`)
             .then(res => res.json())
             .then(data => setTodoData(data))
     }, [])
@@ -35,7 +32,7 @@ const UpdateTask = () => {
             description: description,
             deadline: deadline,
         }
-        const updateRes = await axios.put(`http://localhost:5000/alltasks/v2/${id}`, updateData);
+        const updateRes = await axios.put(`https://task-management-platform-server-psi.vercel.app/alltasks/v2/${id}`, updateData);
         console.log(updateRes.data)
         if (updateRes.data.modifiedCount > 0) {
             //

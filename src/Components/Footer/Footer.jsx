@@ -22,7 +22,7 @@ const Footer = () => {
                 <nav>
                     <header className="footer-title">Quick Links</header>
                     <Link to='/' className="link link-hover">Home</Link>
-                    <Link to='/' className="link link-hover">Dashboard</Link>
+                    <Link to='/dashboard/dashboardhome' className="link link-hover">Dashboard</Link>
                     <Link to='/' className="link link-hover">Tasks</Link>
                     <Link to='/' className="link link-hover">Settings</Link>
                    
