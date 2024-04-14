@@ -2,6 +2,8 @@
 
 ### Server Side Code Link: https://github.com/alamnahid/task-management-platform-server
 
+### Website Live Link: https://best-task-manager.web.app/
+
 Task Manager is a full-fledged web application built with React.js, offering a streamlined approach to managing your tasks. Featuring a modern drag-and-drop interface, it simplifies task organization into "Todo", "Ongoing", and "Completed" categories. With a user-friendly dashboard, Task Manager empowers users to efficiently track, update, and complete tasks with ease.
 
 ## Features
@@ -20,4 +22,8 @@ Task Manager is a full-fledged web application built with React.js, offering a s
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/task-manager.git
+   git clone https://github.com/alamnahid/task-management-platform-client.git
+
+
+
+![taskmanage](https://github.com/alamnahid/task-management-platform-client/assets/138557372/baa7a7dc-4ddd-4b8a-a3b5-3d8646fdc7d9)
